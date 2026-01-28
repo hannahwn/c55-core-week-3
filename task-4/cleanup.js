@@ -71,3 +71,13 @@ let name3 = "Copenhagen";
 let temp3 = -5;
 let wind3 = 25;
 showWeather(name3, temp3, wind3);
+
+let name4 = "Nairobi";
+let temp4 = 20;
+let wind4 = 12;
+showWeather(name4, temp4, wind4);
+
+let name5 = "Paris";
+let temp5 = -2;
+let wind5 = 30;
+showWeather(name5, temp5, wind5);
