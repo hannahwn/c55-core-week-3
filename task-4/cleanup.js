@@ -51,7 +51,7 @@ function showWeather(cityName, celsius, windSpeed) {
     
     if (windSpeed > 0) {
         let chill = getWindChill(celsius, windSpeed);
-        console.log("Wind chill in " + cityName + ": " + chill.toFixed(1) + "°C");
+        console.log("Wind chill in " + cityName + ": " + chill + "°C");
     }
 }
 
