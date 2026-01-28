@@ -4,4 +4,11 @@ function isBookApplicable(searchString) {
     }
     let cleanedSearch = searchString.trim().toLowerCase();
 
+     if (cleanedSearch === "") {
+        return false;
+    }
+
+    let bookTitle = "The fundamentals of JavaScript".toLowerCase();
+
+     let isFound = bookTitle.includes(cleanedSearch);
 }
