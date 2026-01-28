@@ -11,4 +11,8 @@ function isBookApplicable(searchString) {
     let bookTitle = "The fundamentals of JavaScript".toLowerCase();
 
      let isFound = bookTitle.includes(cleanedSearch);
+
+
+     return isFound;
 }
+console.log(isBookApplicable('python'));
