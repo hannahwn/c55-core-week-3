@@ -6,7 +6,7 @@ function CelciusToKelvin(c){
   return c + 273.15;
 }
 
-function adddescription(c){
+function AddDescription(c){
   if (c<0){
     return "Freezing";
   }
@@ -32,3 +32,42 @@ function getWindChill(celsius, windKmPerHour) {
     
     return answer;
 }
+function showWeather(cityName, celsius, windSpeed) {
+    
+    let fahrenheit = CelsiusToFahrenheit(celsius);
+    let kelvin     = CelciusToKelvin(celsius);
+    
+  
+    let feeling = AddDescription(celsius);
+    
+    
+    console.log("Weather Report for " + cityName);
+    console.log("Temperature: " + celsius + "°C");
+    console.log("Temperature: " + fahrenheit + "°F");
+    console.log("Temperature: " + kelvin + "K");
+    console.log("Status: " + feeling);
+    console.log("---");
+    
+    
+    if (windSpeed > 0) {
+        let chill = getWindChill(celsius, windSpeed);
+        console.log("Wind chill in " + cityName + ": " + chill.toFixed(1) + "°C");
+    }
+}
+
+let name1 = "Amsterdam";
+let temp1 = 22;
+let wind1 = 15;
+showWeather(name1, temp1, wind1);
+
+
+let name2 = "Berlin";
+let temp2 = 15;
+let wind2 = 20;
+showWeather(name2, temp2, wind2);
+
+
+let name3 = "Copenhagen";
+let temp3 = -5;
+let wind3 = 25;
+showWeather(name3, temp3, wind3);
