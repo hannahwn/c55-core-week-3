@@ -1,3 +1,6 @@
 function isBookApplicable(searchString) {
-  // Your code here
+   if (!searchString) {          
+        return false;
+    }
+    
 }
